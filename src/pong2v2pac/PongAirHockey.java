@@ -41,8 +41,8 @@ public class PongAirHockey extends JPanel implements ActionListener
     int goalWidth;
     int goalYTop, goalYBottom;
     
-    Paddle leftPaddle, rightPaddle;
-    int paddleDiameter;
+   // Paddle leftPaddle, rightPaddle;
+    //int paddleDiameter;
     
     Timer t;
     
@@ -76,10 +76,11 @@ public class PongAirHockey extends JPanel implements ActionListener
        
      }
      
-     paddleDiameter = (int) (puckDiameter * .75);
-     gamePuck = new Puck (puckDiameter, this);
-     leftPaddle = new Paddle(paddleDiameter, this, Paddle.LEFT_PADDLE);
-     rightPaddle = new Paddle(paddleDiameter, this, Paddle.RIGHT_PADDLE);
+
+         gamePuck = new Puck (puckDiameter, this);
+//       paddleDiameter = (int) (puckDiameter * .75);
+//     leftPaddle = new Paddle(paddleDiameter, this, Paddle.LEFT_PADDLE);
+//     rightPaddle = new Paddle(paddleDiameter, this, Paddle.RIGHT_PADDLE);
      
      t = new Timer(100, this);
      t.start();
@@ -183,8 +184,8 @@ public class PongAirHockey extends JPanel implements ActionListener
          
          
          gamePuck.drawPuck(g);
-         rightPaddle.drawPaddle(g);
-         leftPaddle.drawPaddle(g);
+//         rightPaddle.drawPaddle(g);
+//         leftPaddle.drawPaddle(g);
          
    }
    
