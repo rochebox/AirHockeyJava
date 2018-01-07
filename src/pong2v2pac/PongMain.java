@@ -11,6 +11,7 @@ public class PongMain
       int fWidth = 1200;
       int fHeight = 500;
       JFrame f = new JFrame("Welcome to STM Air Hockey");
+      f.setFocusable(false);
       f.setSize(fWidth, fHeight+25);
       f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       
